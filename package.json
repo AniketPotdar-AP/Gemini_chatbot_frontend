@@ -4,9 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && ng run chatbot-frontend:server",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "prerender": "ng run chatbot-frontend:prerender",
     "serve:ssr:chatbot-frontend": "node dist/chatbot-frontend/server/server.mjs"
   },
   "private": true,
