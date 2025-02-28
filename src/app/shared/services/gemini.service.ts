@@ -11,7 +11,7 @@ export class GeminiService {
 
   constructor(private http: HttpClient) { }
 
-  generateContent(prompt: string): Observable<string> {
+  generateContent(prompt: any): Observable<string> {
     return this.http
       .post<{ response: string }>(environment.ApiUrl + API.gemini.generatePrompt, prompt)
       .pipe(map((res) => res.response));
