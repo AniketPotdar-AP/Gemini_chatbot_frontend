@@ -1,59 +1,100 @@
-# ChatbotFrontend
+# Gemini Chatbot
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
+A sophisticated conversational AI chatbot powered by Google's Gemini model, built with Angular 19 and styled with Tailwind CSS.
 
-## Development server
+## Overview
 
-To start a local development server, run:
+This project implements a responsive, user-friendly chatbot interface that leverages Google's Gemini large language model to provide intelligent, context-aware responses. The application is built using Angular 19 framework with Tailwind CSS for styling.
 
-```bash
-ng serve
+## Features
+
+- **Gemini LLM Integration**: Connects to Google's Gemini API for powerful language understanding and generation
+- **Responsive Interface**: Built with Angular 19 and Tailwind CSS for a modern, mobile-friendly experience
+- **Conversation History**: Maintains chat history within sessions
+- **Markdown Support**: Renders formatted text, code blocks, and lists
+- **Customizable Themes**: Supports light and dark modes
+- **Typing Indicators**: Provides visual feedback while responses are being generated
+
+## Technologies
+
+- **Frontend**: Angular 19
+- **Styling**: Tailwind CSS
+- **AI Model**: Google Gemini
+- **API Integration**: Google AI/Vertex AI
+
+## Prerequisites
+
+- Node.js (v18.0 or higher)
+- npm (v9.0 or higher)
+- Angular CLI (v19.0 or higher)
+- Google Cloud account with access to Gemini API
+
+## Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/AniketPotdar-AP/Gemini_chatbot_frontend.git
+   cd gemini-chatbot
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   ```
+
+3. Set up your environment variables:
+   - Create a `.env` file in the project root
+   - Add your Gemini API key:
+     ```
+     GEMINI_API_KEY=your_api_key_here
+     ```
+
+4. Start the development server:
+   ```
+   ng serve
+   ```
+
+5. Open your browser and navigate to `http://localhost:4200`
+
+## Usage
+
+1. Type your message in the input field at the bottom of the chat interface
+2. Press Enter or click the send button to submit your query
+3. The chatbot will process your input and generate a response
+4. Continue the conversation as needed
+
+## Configuration
+
+You can customize the behavior of the chatbot by modifying the following files:
+
+- `src/environments/environment.ts`: API endpoints and keys
+- `src/app/shared/services/gemini.service.ts`: Model parameters and prompt engineering
+- `tailwind.config.js`: Custom theme configuration
+
+## Deployment
+
+To build the application for production:
+
+```
+ng build --configuration=production
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+The build artifacts will be stored in the `dist/` directory.
 
-## Code scaffolding
+## Contributing
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-```bash
-ng generate component component-name
-```
+## License
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-```bash
-ng generate --help
-```
+## Acknowledgements
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- [Google Gemini](https://deepmind.google/technologies/gemini/)
+- [Angular Framework](https://angular.io/)
+- [Tailwind CSS](https://tailwindcss.com/)

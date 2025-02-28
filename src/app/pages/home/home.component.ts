@@ -35,7 +35,6 @@ export class HomeComponent {
       (res: any) => {
         setTimeout(() => {
           this.isLoading = false;
-
           this.messages.push({
             text: res,
             isUser: false,
