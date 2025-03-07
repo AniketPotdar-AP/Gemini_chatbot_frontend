@@ -1,6 +1,6 @@
 # Gemini Chatbot
 
-A sophisticated conversational AI chatbot powered by Google's Gemini model, built with Angular 19 and styled with Tailwind CSS.
+This AI chatbot is built using Angular 19 and styled with Tailwind CSS, leveraging Google's Gemini model for intelligent and dynamic conversations. The chatbot processes user queries, interacts with the Gemini API, and delivers AI-driven responses in real time.
 
 ## Overview
 
