@@ -2,6 +2,9 @@
 
 This AI chatbot is built using Angular 19 and styled with Tailwind CSS, leveraging Google's Gemini model for intelligent and dynamic conversations. The chatbot processes user queries, interacts with the Gemini API, and delivers AI-driven responses in real time.
 
+## Demo
+https://gemini-chatbot-model.web.app/
+
 ## Overview
 
 This project implements a responsive, user-friendly chatbot interface that leverages Google's Gemini large language model to provide intelligent, context-aware responses. The application is built using Angular 19 framework with Tailwind CSS for styling.
